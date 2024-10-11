@@ -1,11 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <P>smk sangkuriang 1 cimahi</P>
-</body>
-</html>
+<<?php
+    $nilai = 80;
+
+    //
+    if ($nilai <= 100) {
+
+        if ($nilai != 0) {
+            if ($nilai >= 90) {
+                echo "keterangan = A";
+            } else if ($nilai >= 80) {
+                echo "keterangan = B";
+            } elseif ($nilai >= 70) {
+                echo "keterangan =C";
+            } else {
+                echo "keterangan = D";
+            }
+        } else {
+            echo "keterangan = tidak lulus";
+        }
+    } else {
+        return;
+    }
+    ?>
